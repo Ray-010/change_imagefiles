@@ -1,6 +1,7 @@
 """ 使い方
 imagesフォルダ内のpngファイルをjpgファイルに変換します
 """
+
 import os
 import glob
 from PIL import Image
