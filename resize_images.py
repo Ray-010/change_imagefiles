@@ -29,5 +29,6 @@ for file in flist:
             ok = True
 
     if ok:
+        print("resized", file, "height: ", height, "width: ", width)
         img_resized = img.resize((width, height))
         img_resized.save(file, quality = 90)

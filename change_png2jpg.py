@@ -1,7 +1,7 @@
 """ 使い方
 imagesフォルダ内のpngファイルをjpgファイルに変換します
 """
-
+import os
 import glob
 from PIL import Image
 
@@ -13,3 +13,4 @@ for file in plist:
     img = img.convert('RGB')
     save_filepath = file[:-4] + '.jpg'
     img.save(save_filepath, quality = 90)
+    os.remove(file)

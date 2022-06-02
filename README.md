@@ -6,6 +6,9 @@
 
 インストール
 ```
+python -m venv venv
+./venv/Scripts/activate
+
 git clone https://github.com/Ray-010/change_imagefile
-pip install requirements.txt
+pip install -r requirements.txt
 ```

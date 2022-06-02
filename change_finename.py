@@ -15,4 +15,4 @@ flist = glob.glob(path_jpg)
 print(flist)
 for i, file in enumerate(flist):
     print(file)
-    os.rename(file, './images/pedestrian_light_image' + str(i) + '.jpg')
+    os.rename(file, './images/a_pedestrian_light_image' + str(i) + '.jpg')
