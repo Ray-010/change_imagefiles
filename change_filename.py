@@ -9,9 +9,11 @@ pedestrian_light_image + number .jpg
 import os
 import glob
 
-# 画像名前の変更
 path_jpg = './images/*.jpg'
 flist = glob.glob(path_jpg)
+
+# 画像名前の変更
+file_name = 'a_pedestrian_light_image'
 for i, file in enumerate(flist):
     print(file)
-    os.rename(file, './images/a_pedestrian_light_image' + str(i) + '.jpg')
+    os.rename(file, './images/' + file_name + str(i) + '.jpg')
